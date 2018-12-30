@@ -1,10 +1,7 @@
 //----------MAIN-------------//
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -16,15 +13,47 @@ a {
   }
 }
 
+//----------MIXINS-------------//
+// @mixin text-padding {
+
+// }
+
 //----------CUSTOM-------------//
 
 .top-banner {
-  background-color: #5c85b2;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all .8s ease-in-out;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url('kao_self.jpg');
   height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -webkit-transform: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) );
+  }
 
   .top-banner-text {
-    padding-top: 5em;
+    color: white;
+    padding-top: 3em;
+    padding-left: 5em;
   }
+
+  .middle-banner-text {
+    color: white;
+    padding-top: 7em;
+    padding-left: 5em;
+  }
+
+  .line {
+    border-top: 5px white solid;
+    width: 5em;
+    margin: 1em 0 1em;
+  }
+
 }
 
 
