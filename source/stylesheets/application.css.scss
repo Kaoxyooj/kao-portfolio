@@ -20,38 +20,50 @@ a {
 
 //----------CUSTOM-------------//
 
+.mh-100 {
+  min-height: 100vh;
+}
+
+.line {
+  border-top: 5px white solid;
+  width: 5em;
+  margin: 1em 0 1em;
+}
+
+
+.line-2 {
+  border-top: 5px black solid;
+  width: 5em;
+  margin: 1em 0 1em;
+}
+
 .top-banner {
+  height: 100vh;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -webkit-transition: all .8s ease-in-out;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url('kao_self.jpg');
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url('kao_self.jpg');
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 
-  &:hover {
-    filter: none;
-    -webkit-filter: grayscale(0%);
-    -webkit-transform: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) );
-  }
+  // &:hover {
+  //   filter: none;
+  //   -webkit-filter: grayscale(0%);
+  //   -webkit-transform: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), image-url('kao_self.jpg') );
+  // }
 
   .top-banner-text {
     color: white;
-    padding-top: 3em;
-    padding-left: 5em;
+    .logo {
+      max-width: 100px;
+      max-height: 100px;
+    }
   }
 
   .middle-banner-text {
     color: white;
-    padding-top: 7em;
-    padding-left: 5em;
-  }
-
-  .line {
-    border-top: 5px white solid;
-    width: 5em;
-    margin: 1em 0 1em;
+    padding-top: 12em;
   }
 
 }
