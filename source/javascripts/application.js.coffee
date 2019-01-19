@@ -1,3 +1,5 @@
+
+
 $.fn.isInViewport = ->
   elementTop = $(this).offset().top
   elementBottom = elementTop + $(this).outerHeight()
@@ -5,20 +7,45 @@ $.fn.isInViewport = ->
   viewportBottom = viewportTop + $(window).height()
   return elementBottom > viewportTop && elementTop < viewportBottom
 
+
+
 $(document).ready ->
-  console.log "READY"
-  $('.top-banner').parallax imageSrc: '/images/kao_self.jpg'
+  $('.top-banner').parallax
+    imageSrc: '/images/kao_self.jpg'
+
+  #TYPED JS INITIALIZER
+  options = 
+    strings: [
+      'Ruby on Rails Specialist',
+      'JavaScript Enthusiast',
+      'SASS Aficionado',
+      'API Architect',
+      'SQL Nerd',
+      ''
+    ]
+    typeSpeed: 30
+    loop: true
+    cursorChar: '_'
+    
+  typed = new Typed('#intro_text', options)
+  #TYPED JS INITIALIZER
 
 $(document).on "scroll", ->
   aboutMe()
   projects()
       
 aboutMe = -> 
-  if $("#intro").isInViewport()
-    $("#intro").addClass(animationClasses())
+  el = $("#intro")
+  if el.isInViewport()
+    el.addClass(animationClasses())
+  else
+    el.removeClass(animationClasses())
 
 projects = ->
-  if $("#projects").isInViewport()
-    $("#projects").addClass(animationClasses())
+  el = $("#projects")
+  if el.isInViewport()
+    el.addClass(animationClasses())
+  else
+    el.removeClass(animationClasses())
 
 animationClasses = -> "animated fadeIn slower"

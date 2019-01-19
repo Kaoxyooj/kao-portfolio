@@ -1,24 +1,27 @@
 .top-banner
-
   .container.middle-banner-text
     %h1 Hi, I'm Kao.
     .line
-    -#%h1 Full-Stack Engineer
-    -#%h5 Ruby on Rails Specialist - JavaScript Enthusiast - SASS Aficionado
+    %h1#intro_text
+
+      
+
+.container
+  #intro.top-bottom-p
+    %h1 About Me.
+    .line-2
+    %h5 I'm a Full-Stack Web Developer from Milwaukee, Wisconsin. I have a huge passion for building custom APIs and designing clean, responsive UI utilizing SASS. I currently work at Wisconsin Vision Associates as a Full-Stack Web Developer where I build and maintain web applications. Learning new skills and technology is my forte and applying what I've learned is one of my many ambitious goals.
+
+  #projects.top-bottom-p
+    %h1 My Projects.
+    .line-2
+    .row
+      .col-md-6
+        = image_tag "wva_ss.png", class: "img-fluid"
+      .col-md-6
+        
 
 
-.py-5
-  #intro
-    .container
-      %h1 Me.
-      .line-2
-      %h5 I'm a Full-Stack Web Developer from Milwaukee, Wisconsin. I have a huge passion for building custom API implementations, clean responsive UI and animated effects.
-
-.py-5
-  #projects
-    .container
-      %h1 Works.
-      .line-2
-      %h5 Here are some of my previous endeavors...
+    
 
 .my-edu.py-5
