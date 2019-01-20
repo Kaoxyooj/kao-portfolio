@@ -16,12 +16,11 @@ $(document).ready ->
   #TYPED JS INITIALIZER
   options = 
     strings: [
+      'SASS Aficionado',
       'Ruby on Rails Specialist',
       'JavaScript Enthusiast',
-      'SASS Aficionado',
       'API Architect',
-      'SQL Nerd',
-      ''
+      'SQL Adept',
     ]
     typeSpeed: 30
     loop: true
@@ -29,6 +28,10 @@ $(document).ready ->
     
   typed = new Typed('#intro_text', options)
   #TYPED JS INITIALIZER
+
+  #BOOSTRAP TOOLTIP TOGGLES
+  $('[data-toggle="tooltip"]').tooltip()
+  #BOOSTRAP TOOLTIP TOGGLES
 
 $(document).on "scroll", ->
   aboutMe()

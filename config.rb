@@ -14,6 +14,8 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 Haml::TempleEngine.disable_option_validator!
+
+activate :directory_indexes
 # With alternative layout
 # page '/views/index.html.haml', layout: 'false'
 
