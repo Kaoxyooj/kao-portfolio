@@ -1,0 +1,22 @@
+.sidenavbar{
+  position: absolute;
+  height: 100%;
+  width: 15em;
+  background-color: black;
+  a {
+    text-decoration: none;
+  }
+}
+
+.project-container {
+  margin-left: 15em;
+
+  .ripple {
+    height: 100vh;
+  }
+
+  .img-shade {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+}

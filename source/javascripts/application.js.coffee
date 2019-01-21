@@ -1,5 +1,3 @@
-
-
 $.fn.isInViewport = ->
   elementTop = $(this).offset().top
   elementBottom = elementTop + $(this).outerHeight()
@@ -7,48 +5,48 @@ $.fn.isInViewport = ->
   viewportBottom = viewportTop + $(window).height()
   return elementBottom > viewportTop && elementTop < viewportBottom
 
+$.fn.exist = -> return $(this).length > 0
 
+animationClasses = -> "animated fadeIn slower"
 
 $(document).ready ->
-  $('.top-banner').parallax
-    imageSrc: '/images/kao_self.jpg'
-
-  #TYPED JS INITIALIZER
-  options = 
-    strings: [
-      'SASS Aficionado',
-      'Ruby on Rails Specialist',
-      'JavaScript Enthusiast',
-      'API Architect',
-      'SQL Adept',
-    ]
-    typeSpeed: 30
-    loop: true
-    cursorChar: '_'
-    
-  typed = new Typed('#intro_text', options)
-  #TYPED JS INITIALIZER
-
   #BOOSTRAP TOOLTIP TOGGLES
   $('[data-toggle="tooltip"]').tooltip()
   #BOOSTRAP TOOLTIP TOGGLES
 
-$(document).on "scroll", ->
-  aboutMe()
-  projects()
+  #RIPPLE EFFECT
+  # if $(".ripple").exist()
+  #   $(".ripple").ripples
+  #     imageUrl: "/images/projects/wva/wva_devices.jpg"
+  #RIPPLE EFFECT
       
-aboutMe = -> 
-  el = $("#intro")
-  if el.isInViewport()
-    el.addClass(animationClasses())
-  else
-    el.removeClass(animationClasses())
+  #PARALLAX EFFECT
+  if $('.top-banner').exist()
+    $('.top-banner').parallax
+      imageSrc: '/images/kao_self.jpg'
+  #PARALLAX EFFECT
 
-projects = ->
-  el = $("#projects")
-  if el.isInViewport()
-    el.addClass(animationClasses())
-  else
-    el.removeClass(animationClasses())
+  #TYPED JS INITIALIZER
+  if $("#intro_text").exist()
+    options = 
+      strings: [
+        'SASS Aficionado.',
+        'Ruby on Rails Specialist.',
+        'JavaScript Enthusiast.',
+        'API Architect.',
+        'SQL Adept.',
+        'Keeping it simple.'
+      ]
+      typeSpeed: 30
+      loop: true
+      cursorChar: '_'
+      
+    typed = new Typed('#intro_text', options)
+  #TYPED JS INITIALIZER
 
-animationClasses = -> "animated fadeIn slower"
+$(document).on "scroll", ->
+  el_ids = ["intro", "projects"]
+  for id in el_ids
+    el = $("##{id}")
+    return unless el.exist()  
+    if el.isInViewport() then el.addClass(animationClasses()) else el.removeClass(animationClasses())

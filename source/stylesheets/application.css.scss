@@ -1,7 +1,7 @@
 //----------MAIN-------------//
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -11,6 +11,10 @@ a {
   &:hover {
     color: rgba(#000, 0.6);
   }
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
 }
 
 //----------MIXINS-------------//
@@ -30,6 +34,10 @@ a {
 
 .mh-100 {
   min-height: 100vh;
+}
+
+.maxh-50 {
+  max-height: 50vh;
 }
 
 .line {
