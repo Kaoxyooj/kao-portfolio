@@ -6,23 +6,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.make-white {
-  height: 100vh;
-  width: 100vw;
-  background: white;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  position: absolute;
-  left: 0;
-
-}
-.make-white.move {
-  left: 100%;
-}
-
 a {
   color: rgba(#000, 0.7);
 
@@ -30,6 +13,11 @@ a {
   &:hover {
     color: rgba(#000, 0.6);
   }
+}
+
+.no-pm {
+  margin: unset;
+  padding: unset;
 }
 
 .font-raleway {
@@ -78,6 +66,10 @@ a {
   background: black;
   -webkit-filter: grayscale(100%);
   -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   // background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url('kao_self.jpg');
   // background-position: center;
   // background-repeat: no-repeat;

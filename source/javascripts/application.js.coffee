@@ -1,7 +1,7 @@
 bodyBgToggle = ->  
   if $(".top-banner").exist()
-    $(".top-banner").css("background", "transparent")
-    $("body").css("background", "white")
+    $(".top-banner").css("background-color", "transparent")
+    $("body").css("background", "unset")
 
 $.fn.isInViewport = ->
   elementTop = $(this).offset().top

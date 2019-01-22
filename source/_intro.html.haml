@@ -8,11 +8,11 @@
 
 .container
   #slogan.font-raleway
-    .row.py-5.text-center
+    .row.no-pm.py-5.text-center
       .p-2.col-lg-4.text-center
-        %h2 < Stay Clean >
+        %h2 < Stay_Clean >
       .p-2.col-lg-4
-        %h2 stay = (Simple) =>
+        %h2 stay = (Simple) ->
       .p-2.col-lg-4
         %h2 def StayCoding
   #intro.top-bottom-p
@@ -24,7 +24,7 @@
     %h1 My Projects.
     .line-2
 
-    .row
+    .row.no-pm
       .col-md-6
         = link_to image_tag("/images/projects/wva/wva_devices.jpg", class: "img-fluid"), "https://wvastore.wisvis.com", target: "_blank"
       .col-md-6
@@ -32,8 +32,9 @@
         %p WVA is an enterprise web application I developed from the ground up. This application includes a full e-commerce platform available only to WVA accounts. It also contains a fully implemented CMS (Content Management System) to help accounts maintain and easily update their websites. This project was completely rewritten from it's php predecessor to the Ruby on Rails framework.
 
         .pb-3= link_to "Read More &#x21a0;", "projects/wva", class: "text-primary"
+        = link_to "#{image_tag("icons/github-icon.png")}Private Repository", "javascript:;", class: "github_icon"
 
-        .d-flex.flex-row
+        .d-flex.flex-wrap.no-pm
           .p-1{title: "Ruby", data: {toggle: "tooltip", placement:"bottom"}}
             = link_to image_tag("icons/ruby-icon.png"), "https://www.ruby-lang.org/en/", class: "_icon", target: "_blank"
           .p-1{title: "Ruby on Rails", data: {toggle: "tooltip", placement:"bottom"}}
@@ -46,8 +47,6 @@
             = link_to image_tag("icons/jquery-icon.png"), "https://jquery.com/", class: "_icon", target: "_blank"
           .p-1{title: "RocketChat", data: {toggle: "tooltip", placement:"bottom"}}
             = link_to image_tag("icons/rocketchat-icon.png"), "https://rocket.chat/", class: "_icon", target: "_blank"
-          .p-1
-            = link_to "#{image_tag("icons/github-icon.png")}Private Repository", "javascript:;", class: "github_icon"
     
 
-.my-edu.py-5
+.my-edu.no-pm.py-5
