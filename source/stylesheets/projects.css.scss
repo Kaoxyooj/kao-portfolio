@@ -1,7 +1,7 @@
 .sidenavbar{
   position: absolute;
   height: 100%;
-  width: 15em;
+  width: 10em;
   background-color: black;
   a {
     text-decoration: none;
@@ -19,4 +19,10 @@
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
   }
+}
+
+.animate-sidebar {
+  width: 100vw;
+  -webkit-transition: width 0.5s; /* Safari */
+  transition: width 0.5s;
 }

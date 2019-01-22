@@ -1,3 +1,8 @@
+bodyBgToggle = ->  
+  if $(".top-banner").exist()
+    $(".top-banner").css("background", "transparent")
+    $("body").css("background", "white")
+
 $.fn.isInViewport = ->
   elementTop = $(this).offset().top
   elementBottom = elementTop + $(this).outerHeight()
@@ -10,6 +15,22 @@ $.fn.exist = -> return $(this).length > 0
 animationClasses = -> "animated fadeIn slower"
 
 $(document).ready ->
+
+  if $(".sidenavbar").exist()
+    $("body").css("background", "white")
+  
+  setTimeout ->
+    bodyBgToggle()
+  , 2000
+
+  #ANIMATE SIDEBAR
+  $(document).on "click", ".sidebar-back", ->
+    $(".sidenavbar").addClass("animate-sidebar")
+    setTimeout ->
+      window.location.replace("/")
+    , 500 
+  #ANIMATE SIDEBAR
+
   #BOOSTRAP TOOLTIP TOGGLES
   $('[data-toggle="tooltip"]').tooltip()
   #BOOSTRAP TOOLTIP TOGGLES
@@ -28,23 +49,40 @@ $(document).ready ->
 
   #TYPED JS INITIALIZER
   if $("#intro_text").exist()
+    setTimeout ->
+      options = 
+        strings: [
+          'SASS Aficionado.',
+          'Ruby on Rails Specialist.',
+          'JavaScript Enthusiast.',
+          'API Architect.',
+          'SQL Adept.',
+          'Stay clean.',
+          'Stay simple.',
+          'Stay coding.',
+        ]
+        typeSpeed: 40
+        loop: true
+        cursorChar: '_'
+      typed = new Typed('#intro_text', options)
+    , 2000
+
+  if $("#hello").exist()
     options = 
       strings: [
-        'SASS Aficionado.',
-        'Ruby on Rails Specialist.',
-        'JavaScript Enthusiast.',
-        'API Architect.',
-        'SQL Adept.',
-        'Keeping it simple.'
+        "Hi, ",
+        "Hi, I'm Kao"
       ]
-      typeSpeed: 30
-      loop: true
-      cursorChar: '_'
-      
-    typed = new Typed('#intro_text', options)
+      typeSpeed: 50
+      loop: false
+      cursorChar: ''
+    typed = new Typed('#hello', options)
+
   #TYPED JS INITIALIZER
 
 $(document).on "scroll", ->
+  bodyBgToggle()
+
   el_ids = ["intro", "projects"]
   for id in el_ids
     el = $("##{id}")
