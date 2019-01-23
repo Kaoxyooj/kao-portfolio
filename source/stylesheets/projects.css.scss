@@ -1,4 +1,4 @@
-.sidenavbar{
+.sidenavbarleft{
   position: fixed;
   top: 0;
   left: 0;
@@ -11,6 +11,10 @@
   .black {
     color: black;
   }
+}
+
+.sidebar-back {
+  font-size: 50px;
 }
 
 .project-container {

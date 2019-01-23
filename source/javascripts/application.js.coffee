@@ -16,7 +16,7 @@ animationClasses = -> "animated fadeIn slower"
 
 $(document).ready ->
 
-  if $(".sidenavbar").exist()
+  if $(".sidenavbarleft").exist()
     $("body").css("background", "white")
   
   setTimeout ->
@@ -25,7 +25,7 @@ $(document).ready ->
 
   #ANIMATE SIDEBAR
   $(document).on "click", ".sidebar-back", ->
-    $(".sidenavbar").addClass("animate-sidebar")
+    $(".sidenavbarleft").addClass("animate-sidebar")
     setTimeout ->
       window.location.replace("/")
     , 500 
@@ -36,9 +36,9 @@ $(document).ready ->
   #BOOSTRAP TOOLTIP TOGGLES
 
   #RIPPLE EFFECT
-  # if $(".ripple").exist()
-  #   $(".ripple").ripples
-  #     imageUrl: "/images/projects/wva/wva_devices.jpg"
+  # if $(".wva-landing").exist()
+  #   $(".wva-landing").ripples
+  #     imageUrl: "/images/projects/wva/wva2.png"
   #RIPPLE EFFECT
       
   #PARALLAX EFFECT
@@ -57,9 +57,6 @@ $(document).ready ->
           'JavaScript Enthusiast.',
           'API Architect.',
           'SQL Adept.',
-          'Stay clean.',
-          'Stay simple.',
-          'Stay coding.',
         ]
         typeSpeed: 40
         loop: true

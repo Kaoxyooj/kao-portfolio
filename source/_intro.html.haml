@@ -7,46 +7,42 @@
       
 
 .container
+  #intro.top-bottom-p
+    %h1.font-raleway About Me.
+    .line-2.py-2
+    %p.font-raleway I'm a Full-Stack Web Developer from Milwaukee, Wisconsin. I have a huge passion for building custom APIs and designing clean, responsive UI utilizing SASS. I currently work at Wisconsin Vision Associates as a Full-Stack Web Developer where I build and maintain web applications. I perform best after coffee consumption.
+    
+
+  #projects.top-bottom-p.font-raleway
+    %h1 Projects.
+    .line-2.py-2
+
+    %p WVA - Enterprise Web Application  
+    .wva-landing= link_to image_tag("projects/wva/wva3.png", class: "img-fluid"), "projects/wva"
+    .py-3
+      .d-flex.flex-wrap.no-pm
+        .p-1{title: "Ruby", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/ruby-icon.png"), "https://www.ruby-lang.org/en/", class: "_icon", target: "_blank"
+        .p-1{title: "Ruby on Rails", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/ror-icon.png"), "https://rubyonrails.org/", class: "_icon", target: "_blank"
+        .p-1{title: "MySql", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/mysql-icon.png"), "https://www.mysql.com/", class: "_icon", target: "_blank"
+        .p-1{title: "CoffeeScript", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/coffeescript-icon.png"), "https://coffeescript.org/", class: "_icon", target: "_blank"
+        .p-1{title: "jQuery", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/jquery-icon.png"), "https://jquery.com/", class: "_icon", target: "_blank"
+        .p-1{title: "RocketChat", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/rocketchat-icon.png"), "https://rocket.chat/", class: "_icon", target: "_blank"
+        .p-1= link_to "#{image_tag("icons/github-icon.png")}Private Repository", "javascript:;", class: "github_icon"
+    
+
+.my-edu.no-pm.py-5
+
   #slogan.font-raleway
-    .row.no-pm.py-5.text-center
+    .stay.row.no-pm.py-5.text-center
       .p-2.col-lg-4.text-center
         %h2 < Stay_Clean >
       .p-2.col-lg-4
         %h2 stay = (Simple) ->
       .p-2.col-lg-4
         %h2 def StayCoding
-  #intro.top-bottom-p
-    %h1 About Me.
-    .line-2
-    %h5 I'm a Full-Stack Web Developer from Milwaukee, Wisconsin. I have a huge passion for building custom APIs and designing clean, responsive UI utilizing SASS. I currently work at Wisconsin Vision Associates as a Full-Stack Web Developer where I build and maintain web applications. Learning new skills and technology is my forte and applying what I've learned is one of my many ambitious goals.
-
-  #projects.top-bottom-p
-    %h1 My Projects.
-    .line-2
-
-    .row.no-pm
-      .col-md-6
-        = link_to image_tag("/images/projects/wva/wva_devices.jpg", class: "img-fluid"), "https://wvastore.wisvis.com", target: "_blank"
-      .col-md-6
-        %h3 WVA
-        %p WVA is an enterprise web application I developed from the ground up. This application includes a full e-commerce platform available only to WVA accounts. It also contains a fully implemented CMS (Content Management System) to help accounts maintain and easily update their websites. This project was completely rewritten from it's php predecessor to the Ruby on Rails framework.
-
-        .pb-3= link_to "Read More &#x21a0;", "projects/wva", class: "text-primary"
-        = link_to "#{image_tag("icons/github-icon.png")}Private Repository", "javascript:;", class: "github_icon"
-
-        .d-flex.flex-wrap.no-pm
-          .p-1{title: "Ruby", data: {toggle: "tooltip", placement:"bottom"}}
-            = link_to image_tag("icons/ruby-icon.png"), "https://www.ruby-lang.org/en/", class: "_icon", target: "_blank"
-          .p-1{title: "Ruby on Rails", data: {toggle: "tooltip", placement:"bottom"}}
-            = link_to image_tag("icons/ror-icon.png"), "https://rubyonrails.org/", class: "_icon", target: "_blank"
-          .p-1{title: "MySql", data: {toggle: "tooltip", placement:"bottom"}}
-            = link_to image_tag("icons/mysql-icon.png"), "https://www.mysql.com/", class: "_icon", target: "_blank"
-          .p-1{title: "CoffeeScript", data: {toggle: "tooltip", placement:"bottom"}}
-            = link_to image_tag("icons/coffeescript-icon.png"), "https://coffeescript.org/", class: "_icon", target: "_blank"
-          .p-1{title: "jQuery", data: {toggle: "tooltip", placement:"bottom"}}
-            = link_to image_tag("icons/jquery-icon.png"), "https://jquery.com/", class: "_icon", target: "_blank"
-          .p-1{title: "RocketChat", data: {toggle: "tooltip", placement:"bottom"}}
-            = link_to image_tag("icons/rocketchat-icon.png"), "https://rocket.chat/", class: "_icon", target: "_blank"
-    
-
-.my-edu.no-pm.py-5

@@ -4,6 +4,7 @@ body {
   background: black;
   max-height: 100vh;
   font-family: 'Poppins', sans-serif;
+  color: #4e4e4e;
 }
 
 a {
@@ -13,6 +14,10 @@ a {
   &:hover {
     color: rgba(#000, 0.6);
   }
+}
+
+p {
+  font-size: 20px;
 }
 
 .no-pm {
@@ -49,14 +54,14 @@ a {
 
 .line {
   border-top: 5px white solid;
-  width: 5em;
+  width: 3em;
   margin: 1em 0 1em;
 }
 
 
 .line-2 {
   border-top: 5px black solid;
-  width: 5em;
+  width: 3em;
   margin: 1em 0 1em;
 }
 
@@ -97,6 +102,40 @@ a {
 }
 
 .top-bottom-p {
-  padding: 5em 0 5em;
+  padding-top: 25%;
 }
 
+#slogan {
+  min-height: 50vh;
+  .stay {
+    padding-top: 25vh !important;
+  }
+}
+
+#intro {
+  min-height: 100vh
+}
+
+#projects {
+  min-height: 100vh;
+}
+
+.wva-landing {
+  max-height: 50vh;
+  overflow: hidden;
+  img {
+    transition: all 0.5s ease-in-out;
+  }
+  img:hover{
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.project-animate {
+  width: 100vw;
+  -webkit-transition: width 0.5s; /* Safari */
+  transition: width 0.5s;
+}
