@@ -4,7 +4,7 @@ body {
   background: black;
   max-height: 100vh;
   font-family: 'Poppins', sans-serif;
-  color: #4e4e4e;
+  color: #6c757d;
 }
 
 a {
@@ -17,7 +17,7 @@ a {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .no-pm {
@@ -75,16 +75,6 @@ p {
   -o-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  // background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url('kao_self.jpg');
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-
-  // &:hover {
-  //   filter: none;
-  //   -webkit-filter: grayscale(0%);
-  //   -webkit-transform: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), image-url('kao_self.jpg') );
-  // }
 
   .top-banner-text {
     color: white;
@@ -106,27 +96,29 @@ p {
 }
 
 #slogan {
-  min-height: 50vh;
+  // min-height: 50vh;
   .stay {
-    padding-top: 25vh !important;
+    padding-top: 10vh !important;
   }
 }
 
 #intro {
-  min-height: 100vh
+  max-height: 100vh;
+  // background: #efefef;
 }
 
 #projects {
   min-height: 100vh;
 }
 
-.wva-landing {
-  max-height: 50vh;
+.wva-landing, .srrs-landing {
+  border-radius: 2px;
+  max-height: 40vh;
   overflow: hidden;
   img {
     transition: all 0.5s ease-in-out;
   }
-  img:hover{
+  img:hover {
     -webkit-transform: scale(1.1); 
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
