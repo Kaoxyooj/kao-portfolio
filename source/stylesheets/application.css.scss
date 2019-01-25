@@ -7,6 +7,18 @@ body {
   color: #6c757d;
 }
 
+#top-nav {
+  position: fixed;
+  top: 15px;
+  right: 0;
+  z-index: 1;
+  a {
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+  }
+}
+
 a {
   color: rgba(#000, 0.7);
 
@@ -92,19 +104,17 @@ p {
 }
 
 .top-bottom-p {
-  padding-top: 25%;
+  padding-top: 20%;
 }
 
 #slogan {
-  // min-height: 50vh;
   .stay {
     padding-top: 10vh !important;
   }
 }
 
 #intro {
-  max-height: 100vh;
-  // background: #efefef;
+  height: 100vh;
 }
 
 #projects {
@@ -130,4 +140,9 @@ p {
   width: 100vw;
   -webkit-transition: width 0.5s; /* Safari */
   transition: width 0.5s;
+}
+
+.stock-img {
+  width: 100vw;
+  height: 60vh;
 }

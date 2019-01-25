@@ -14,7 +14,27 @@ $.fn.exist = -> return $(this).length > 0
 
 animationClasses = -> "animated fadeIn slower"
 
+
 $(document).ready ->
+
+  if $('#intro').exist()
+    distance = $('#intro').offset().top
+    $window = $(window)
+    $window.scroll ->
+      if $window.scrollTop() >= distance
+        $("#top-nav a").css("color", "black")
+      else
+        $("#top-nav a").css("color", "white")
+      return
+
+  # SMOOTH SCROLLER
+  $('a[href^=\'#\']').click (e) ->
+    e.preventDefault()
+    position = $($(this).attr('href')).offset().top
+    $('body, html').animate scrollTop: position
+    , 1000
+    return
+  # SMOOTH SCROLLER
 
   if $(".sidenavbarleft").exist()
     $("body").css("background", "white")
@@ -45,6 +65,10 @@ $(document).ready ->
   if $('.top-banner').exist()
     $('.top-banner').parallax
       imageSrc: '/images/kao_self.jpg'
+
+  if $(".stock-img").exist()
+    $(".stock-img").parallax
+      imageSrc: '/images/stock/stock6.jpg'
   #PARALLAX EFFECT
 
   #TYPED JS INITIALIZER

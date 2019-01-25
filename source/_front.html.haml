@@ -1,0 +1,72 @@
+#top-banner.top-banner
+  .container.middle-banner-text
+    %h1#hello
+    .line
+    %h1#intro_text.font-raleway
+
+
+#intro
+  .container
+    .top-bottom-p
+      %h1.font-raleway About Me.
+      .line-2.py-2
+      %p I'm a Full-Stack Web Developer from Milwaukee, Wisconsin. I have a huge passion for building custom APIs and designing clean, responsive UI utilizing SASS. I currently work at Wisconsin Vision Associates as a Full-Stack Web Developer where I build and maintain web applications. I perform best after coffee consumption.
+      #slogan.font-raleway
+        .stay.row.no-pm.py-5.text-center
+          .p-2.col-lg-4.text-center
+            %h2 < Stay_Clean >
+          .p-2.col-lg-4
+            %h2 stay = (Simple) ->
+          .p-2.col-lg-4
+            %h2 def StayCoding
+
+.stock-img
+
+#projects
+  .container
+    .top-bottom-p
+      %h1.font-raleway Projects.
+      .line-2.py-2
+
+      .pb-5
+        %p WVA - Enterprise Web Application  
+        .wva-landing= link_to image_tag("projects/wva/wva3.png", class: "img-fluid"), "projects/wva"
+        .py-3
+          .d-flex.flex-wrap.no-pm
+            .p-1{title: "Ruby", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/ruby-icon.png"), "https://www.ruby-lang.org/en/", class: "_icon", target: "_blank"
+            .p-1{title: "Ruby on Rails", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/ror-icon.png"), "https://rubyonrails.org/", class: "_icon", target: "_blank"
+            .p-1{title: "MySql", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/mysql-icon.png"), "https://www.mysql.com/", class: "_icon", target: "_blank"
+            .p-1{title: "CoffeeScript", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/coffeescript-icon.png"), "https://coffeescript.org/", class: "_icon", target: "_blank"
+            .p-1{title: "jQuery", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/jquery-icon.png"), "https://jquery.com/", class: "_icon", target: "_blank"
+            .p-1{title: "RocketChat", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/rocketchat-icon.png"), "https://rocket.chat/", class: "_icon", target: "_blank"
+            .p-1= link_to "#{image_tag("icons/github-icon.png")}Private Repository", "javascript:;", class: "github_icon"
+
+      .pb-5
+        %p SRRS - Proprietary Analytics Dashboard
+        .card.srrs-landing= link_to image_tag("projects/srrs/srrs5.png", class: "img-fluid"), "projects/srrs"
+        .py-3
+          .d-flex.flex-wrap.no-pm
+            .p-1{title: "Ruby", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/ruby-icon.png"), "https://www.ruby-lang.org/en/", class: "_icon", target: "_blank"
+            .p-1{title: "Ruby on Rails", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/ror-icon.png"), "https://rubyonrails.org/", class: "_icon", target: "_blank"
+            .p-1{title: "MySql", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/mysql-icon.png"), "https://www.mysql.com/", class: "_icon", target: "_blank"
+            .p-1{title: "CoffeeScript", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/coffeescript-icon.png"), "https://coffeescript.org/", class: "_icon", target: "_blank"
+            .p-1{title: "jQuery", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/jquery-icon.png"), "https://jquery.com/", class: "_icon", target: "_blank"
+            .p-1{title: "DataTables", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/dt-icon.png"), "https://datatables.net/", class: "_icon", target: "_blank"
+            .p-1{title: "Charts.js", data: {toggle: "tooltip", placement:"bottom"}}
+              = link_to image_tag("icons/chartsjs-icon.png"), "https://www.chartjs.org/", class: "_icon", target: "_blank"
+            .p-1= link_to "#{image_tag("icons/github-icon.png")}Private Repository", "javascript:;", class: "github_icon"
+    
+
+
