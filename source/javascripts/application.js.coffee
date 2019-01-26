@@ -16,6 +16,9 @@ animationClasses = -> "animated fadeIn slower"
 
 
 $(document).ready ->
+  $("#copy_email").click ->
+    $("#copyme").select()
+    document.execCommand("copy")
 
   if $('#intro').exist()
     distance = $('#intro').offset().top
@@ -23,8 +26,10 @@ $(document).ready ->
     $window.scroll ->
       if $window.scrollTop() >= distance
         $("#top-nav a").css("color", "black")
+        $(".arrow").html("&#8593;")
       else
         $("#top-nav a").css("color", "white")
+        $(".arrow").html("")
       return
 
   # SMOOTH SCROLLER
