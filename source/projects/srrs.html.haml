@@ -5,5 +5,65 @@ title: SRRS-Project
 = partial "sidenav"
 
 .project-container
-  .container
-    .text-center= image_tag("/images/projects/srrs/srrs2.png", class: "img-fluid")
+  .container.pt-5
+    =image_tag("/images/projects/srrs/srrs4.png", class: "img-fluid")
+
+    %h5.pt-5.font-weight-bold.text-right= link_to "Private Site", "javascript:;"
+
+    %h1.font-raleway.pt-5 SRRS.
+    .line-2.py-2
+    %p A data analytics web application I co-developed.  This application is designed to help provide salesreps with sufficient data to analyze weak points, illustrate trends and target higher profit margins based on national aggregate data. While this application may seem to lack on the front-end, the strong points lie in the computation of the hundreds-of-thousands of rows of data that has been aggregated over many years.  Safe to say that this web application is back-end heavy.
+
+    .py-5
+      .row.text-center
+        .col-6
+          = image_tag("/images/projects/srrs/srrs-m2.png", class: "img-fluid")
+          = image_tag("/images/projects/srrs/srrs-m3.png", class: "img-fluid")
+        .col-6
+          = image_tag("/images/projects/srrs/srrs-m1.png", class: "img-fluid w-50")
+
+    %h1.font-raleway.pt-5 Technolgy.
+    .line-2.py-2
+    %ul
+      %li
+        %span.font-weight-bold Ruby
+        %span - Backend / Server side language
+      %li 
+        %span.font-weight-bold Ruby on Rails
+        %span - Web framework
+      %li 
+        %span.font-weight-bold MySQL
+        %span - ActiveRecord used as the main ORM
+      %li
+        %span.font-weight-bold JavaScript
+        %span - Coffeescript and jQuery were used for uniformity
+      %li
+        %span.font-weight-bold HAML
+        %span - HTML abstraction markup language used to convey a clean layout
+      %li
+        %span.font-weight-bold SASS
+        %span - Further extended CSS styling for me to write complex mixins and dynamic variable usage
+      %li
+        %span.font-weight-bold REST API's
+        %span - Internal API's were also developed for and used with this application
+      %li
+        %span.font-weight-bold DataTables
+        %span - A feature-full plug-in for the jQuery library that we utilize to display and control the datatables.
+
+    .py-3
+      .d-flex.flex-wrap.no-pm
+        .p-1{title: "Ruby", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/ruby-icon.png"), "https://www.ruby-lang.org/en/", class: "_icon", target: "_blank"
+        .p-1{title: "Ruby on Rails", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/ror-icon.png"), "https://rubyonrails.org/", class: "_icon", target: "_blank"
+        .p-1{title: "MySQL", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/mysql-icon.png"), "https://www.mysql.com/", class: "_icon", target: "_blank"
+        .p-1{title: "CoffeeScript", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/coffeescript-icon.png"), "https://coffeescript.org/", class: "_icon", target: "_blank"
+        .p-1{title: "jQuery", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/jquery-icon.png"), "https://jquery.com/", class: "_icon", target: "_blank"
+        .p-1{title: "DataTables", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/dt-icon.png"), "https://datatables.net/", class: "_icon", target: "_blank"
+        .p-1{title: "Charts.js", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/chartsjs-icon.png"), "https://www.chartjs.org/", class: "_icon", target: "_blank"
+        .p-1= link_to "#{image_tag("icons/github-icon.png")}Private Github Repository", "javascript:;", class: "github_icon"

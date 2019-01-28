@@ -5,8 +5,62 @@ title: WVA-Project
 = partial "sidenav"
 
 .project-container
-  .container
+  .container.pt-5
     .text-center= image_tag("/images/projects/wva/wva_multi_devices.jpg", class: "img-fluid")
-    %p WVA is an enterprise web application I developed from the ground up. This application includes a full e-commerce platform available only to WVA accounts. This application contains a fully implemented CMS (Content Management System) to help accounts maintain and easily update their websites. This project was completely rewritten from it's php predecessor to the Ruby on Rails framework.
+    %h5.pt-5.font-weight-bold.text-right= link_to "Visit WVA &#8594;", "https://wisvis.com", target: "_blank "
+    %h1.font-raleway.pt-5 WVA.
+    .line-2.py-2
+    %p WVA is an enterprise web application that I lead in developement from the ground up. This application includes a full e-commerce platform available exclusively to WVA accounts. The application also contains an extentisve CMS(Content Management System) to help accounts easily manage and maintain their websites.  Engineering this application to be fully extensible for future content and feature updates was a priority for me. Utilizing a slick and secure REST API strategy(JWT), I was able to architect a method to securely communicate with an analytics reporting application(SRRS) that I previously co-developed. This project was completely rewritten from it's php predecessor to the Ruby on Rails framework.
+
+    %h1.font-raleway.pt-5 Technolgy.
+    .line-2.py-2
+    %ul
+      %li
+        %span.font-weight-bold Ruby
+        %span - Backend / Server side language
+      %li 
+        %span.font-weight-bold Ruby on Rails
+        %span - Web framework
+      %li 
+        %span.font-weight-bold MySQL
+        %span - ActiveRecord used as the main ORM
+      %li
+        %span.font-weight-bold JavaScript
+        %span - Coffeescript and jQuery were used for uniformity
+      %li
+        %span.font-weight-bold RocketChat
+        %span - Open source chatting tool modified to conform to HIPAA regulations and hosted from proprietary server 
+      %li
+        %span.font-weight-bold HAML
+        %span - HTML abstraction markup language used to convey a clean layout
+      %li
+        %span.font-weight-bold SASS
+        %span - Further extended CSS styling for me to write complex mixins and dynamic variable usage
+      %li
+        %span.font-weight-bold REST API's
+        %span - 3rd party API's used for address validations; custom internal API's were also developed for and used with this application
+      .py-3.small Last but not least...
+      %li
+        %spam.font-weight-bold Email Templates
+        %span - Ahh yes, the endless contruction of tables all whilst thinking to myself... there has to be a better way of doing this...
+
+
+    .py-3
+      .d-flex.flex-wrap.no-pm
+        .p-1{title: "Ruby", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/ruby-icon.png"), "https://www.ruby-lang.org/en/", class: "_icon", target: "_blank"
+        .p-1{title: "Ruby on Rails", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/ror-icon.png"), "https://rubyonrails.org/", class: "_icon", target: "_blank"
+        .p-1{title: "MySQL", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/mysql-icon.png"), "https://www.mysql.com/", class: "_icon", target: "_blank"
+        .p-1{title: "CoffeeScript", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/coffeescript-icon.png"), "https://coffeescript.org/", class: "_icon", target: "_blank"
+        .p-1{title: "jQuery", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/jquery-icon.png"), "https://jquery.com/", class: "_icon", target: "_blank"
+        .p-1{title: "RocketChat", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/rocketchat-icon.png"), "https://rocket.chat/", class: "_icon", target: "_blank"
+        .p-1= link_to "#{image_tag("icons/github-icon.png")}Private Github Repository", "javascript:;", class: "github_icon"
+
+
     
 

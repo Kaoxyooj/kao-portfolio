@@ -16,21 +16,22 @@ animationClasses = -> "animated fadeIn slower"
 
 
 $(document).ready ->
-  $("#copy_email").click ->
-    $("#copyme").select()
-    document.execCommand("copy")
 
+  #CONTROLS THE NAVBAR ANIMATTION & STYLES
   if $('#intro').exist()
     distance = $('#intro').offset().top
     $window = $(window)
     $window.scroll ->
       if $window.scrollTop() >= distance
+        $("#top-nav").fadeIn("slower")
         $("#top-nav a").css("color", "black")
         $(".arrow").html("&#8593;")
       else
+        # $("#top-nav").addClass("hide")
         $("#top-nav a").css("color", "white")
         $(".arrow").html("")
       return
+  #CONTROLS THE NAVBAR ANIMATTION & STYLES
 
   # SMOOTH SCROLLER
   $('a[href^=\'#\']').click (e) ->
@@ -84,13 +85,14 @@ $(document).ready ->
           'SASS Aficionado.',
           'Ruby on Rails Specialist.',
           'JavaScript Enthusiast.',
-          'API Architect.',
+          'RESTful API Architect.',
           'SQL Adept.',
         ]
         typeSpeed: 40
         loop: true
         cursorChar: '_'
       typed = new Typed('#intro_text', options)
+      $("#top-nav").fadeIn("slower")
     , 2000
 
   if $("#hello").exist()

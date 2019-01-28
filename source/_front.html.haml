@@ -10,15 +10,15 @@
     .top-bottom-p
       %h1.font-raleway About Me.
       .line-2.py-2
-      %p I'm a Full-Stack Web Developer from Milwaukee, Wisconsin. I have a huge passion for building custom APIs and designing clean, responsive UI utilizing SASS. I currently work at Wisconsin Vision Associates as a Full-Stack Web Developer where I build and maintain web applications. I perform best after coffee consumption.
+      %p I'm a Full-Stack Web Developer from Milwaukee, Wisconsin. I have a huge passion for building custom REST APIs and designing clean, responsive UI utilizing SASS. I currently work at Wisconsin Vision Associates as a Full-Stack Web Developer where I build and maintain web applications. I perform best after coffee consumption.
       #slogan.font-raleway
         .stay.row.no-pm.py-5.text-center
           .p-2.col-lg-4.text-center
-            %h2 < Stay_Clean >
+            %h4 < Stay_Clean >
           .p-2.col-lg-4
-            %h2 stay = (Simple) ->
+            %h4 stay = (Simple) ->
           .p-2.col-lg-4
-            %h2 def StayCoding
+            %h4 def StayCoding
 
 .stock-img
 
@@ -31,47 +31,8 @@
       .pb-5
         %p WVA - Enterprise Web Application  
         .wva-landing= link_to image_tag("projects/wva/wva3.png", class: "img-fluid"), "projects/wva"
-        .py-3
-          .d-flex.flex-wrap.no-pm
-            .p-1{title: "Ruby", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/ruby-icon.png"), "https://www.ruby-lang.org/en/", class: "_icon", target: "_blank"
-            .p-1{title: "Ruby on Rails", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/ror-icon.png"), "https://rubyonrails.org/", class: "_icon", target: "_blank"
-            .p-1{title: "MySql", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/mysql-icon.png"), "https://www.mysql.com/", class: "_icon", target: "_blank"
-            .p-1{title: "CoffeeScript", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/coffeescript-icon.png"), "https://coffeescript.org/", class: "_icon", target: "_blank"
-            .p-1{title: "jQuery", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/jquery-icon.png"), "https://jquery.com/", class: "_icon", target: "_blank"
-            .p-1{title: "RocketChat", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/rocketchat-icon.png"), "https://rocket.chat/", class: "_icon", target: "_blank"
-            .p-1= link_to "#{image_tag("icons/github-icon.png")}Private Repository", "javascript:;", class: "github_icon"
 
-      .pb-5
+      .py-5
         %p SRRS - Proprietary Analytics Dashboard
         .card.srrs-landing= link_to image_tag("projects/srrs/srrs5.png", class: "img-fluid"), "projects/srrs"
-        .py-3
-          .d-flex.flex-wrap.no-pm
-            .p-1{title: "Ruby", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/ruby-icon.png"), "https://www.ruby-lang.org/en/", class: "_icon", target: "_blank"
-            .p-1{title: "Ruby on Rails", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/ror-icon.png"), "https://rubyonrails.org/", class: "_icon", target: "_blank"
-            .p-1{title: "MySql", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/mysql-icon.png"), "https://www.mysql.com/", class: "_icon", target: "_blank"
-            .p-1{title: "CoffeeScript", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/coffeescript-icon.png"), "https://coffeescript.org/", class: "_icon", target: "_blank"
-            .p-1{title: "jQuery", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/jquery-icon.png"), "https://jquery.com/", class: "_icon", target: "_blank"
-            .p-1{title: "DataTables", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/dt-icon.png"), "https://datatables.net/", class: "_icon", target: "_blank"
-            .p-1{title: "Charts.js", data: {toggle: "tooltip", placement:"bottom"}}
-              = link_to image_tag("icons/chartsjs-icon.png"), "https://www.chartjs.org/", class: "_icon", target: "_blank"
-            .p-1= link_to "#{image_tag("icons/github-icon.png")}Private Repository", "javascript:;", class: "github_icon"
     
-#contact
-  .container.text-center.py-5
-    .top-bottom-p
-      %h4.font-raleway Contact.
-      .py-1 #{mail_to "kaoxyooj@icloud.com"}
-      .py-1= link_to "Github", "https://github.com/Kaoxyooj"
-

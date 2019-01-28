@@ -5,6 +5,11 @@ body {
   max-height: 100vh;
   font-family: 'Poppins', sans-serif;
   color: #6c757d;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hide {
+  display: none;
 }
 
 #top-nav {
