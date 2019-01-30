@@ -12,8 +12,7 @@ title: SRRS-Project
 
     %h1.font-raleway.pt-5 SRRS.
     .line-2.py-2
-    %p A data analytics web application I co-developed.  This application is designed to help provide salesreps with sufficient data to analyze weak points, illustrate trends and target higher profit margins based on national aggregate data. While this application may seem to lack on the front-end, the strong points lie in the computation of the hundreds-of-thousands of rows of data that has been aggregated over many years.  Safe to say that this web application is back-end heavy.
-
+    %p A data analytics web application I co-developed.  This application is designed to provide salesreps with sufficient data to help their accounts analyze weak points, illustrate trends and target higher profit margins based on the aggragate data. This application was very challenging due to the sheer amount of relational data that was required to efficiently compose a dynamic report.
     .py-5
       .row.text-center
         .col-6
@@ -49,6 +48,9 @@ title: SRRS-Project
       %li
         %span.font-weight-bold DataTables
         %span - A feature-full plug-in for the jQuery library that we utilize to display and control the datatables.
+      %li
+        %span.font-weight-bold Capistrano
+        %span - A remote server automation tool that was used to deploy, customize and run web server scripts
 
     .py-3
       .d-flex.flex-wrap.no-pm
@@ -66,4 +68,6 @@ title: SRRS-Project
           = link_to image_tag("icons/dt-icon.png"), "https://datatables.net/", class: "_icon", target: "_blank"
         .p-1{title: "Charts.js", data: {toggle: "tooltip", placement:"bottom"}}
           = link_to image_tag("icons/chartsjs-icon.png"), "https://www.chartjs.org/", class: "_icon", target: "_blank"
+        .p-1{title: "Capistrano", data: {toggle: "tooltip", placement:"bottom"}}
+          = link_to image_tag("icons/cap-icon.png"), "https://capistranorb.com/", class: "_icon", target: "_blank"
         .p-1= link_to "#{image_tag("icons/github-icon.png")}Private Github Repository", "javascript:;", class: "github_icon"
